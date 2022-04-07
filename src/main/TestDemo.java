@@ -1,5 +1,8 @@
 package main;
+import junit.framework.Assert;
 import org.junit.Test;
+
+import java.util.Optional;
 
 import static org.junit.Assert.*;
 
@@ -8,14 +11,14 @@ public class TestDemo {
 
     @Test
     public void testCase1(){
-        assertEquals(10,maximumNumber.maximumTest(10,5,1));
+        assertEquals(Integer.valueOf(10),maximumNumber.maximumTest(10,5,1));
     }
     @Test
     public void testCase2(){
-        assertEquals(10,maximumNumber.maximumTest(5,10,1));
+        assertEquals(Integer.valueOf(10),maximumNumber.maximumTest(5,10,1));
     }
     @Test
     public void testCase3(){
-        assertEquals(10,maximumNumber.maximumTest(1,5,10));
+        assertEquals(Integer.valueOf(10),maximumNumber.maximumTest(1,5,10));
     }
 }
