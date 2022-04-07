@@ -6,7 +6,7 @@ public class MaximumNumber {
         System.out.println("The maximum value is " + maximumNumber.maximumTest(1f, 2f, 3f));
     }
 
-    public Float maximumTest(Float x, Float y, Float z) {
+    public static Float maximumTest(Float x, Float y, Float z) {
         Float max = x;
         if (y.compareTo(max) > 0)
             max = y;
