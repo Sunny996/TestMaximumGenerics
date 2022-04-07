@@ -9,16 +9,16 @@ public class TestDemo {
 
     @Test
     public void testCase1() {
-        assertEquals(Float.valueOf(10), maximumNumber.maximumTest(10f, 5f, 1f));
+        assertEquals("Peach", maximumNumber.maximumTest("Peach", "Banana", "Apple"));
     }
 
     @Test
     public void testCase2() {
-        assertEquals(Float.valueOf(10), maximumNumber.maximumTest(5f, 10f, 1f));
+        assertEquals("Peach", maximumNumber.maximumTest("Apple", "Peach", "Banana"));
     }
 
     @Test
     public void testCase3() {
-        assertEquals(Float.valueOf(10), maximumNumber.maximumTest(1f, 5f, 10f));
+        assertEquals("Peach", maximumNumber.maximumTest("Apple", "Banana", "Peach"));
     }
 }
