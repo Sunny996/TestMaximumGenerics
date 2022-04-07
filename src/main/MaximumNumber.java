@@ -6,7 +6,7 @@ public class MaximumNumber {
         System.out.println("The maximum value is " + maximumNumber.maximumTest("Apple", "Banana", "Peach"));
     }
 
-    public String maximumTest(String x, String y, String z) {
+    public static String maximumTest(String x, String y, String z) {
         String max = x;
         if (y.compareTo(max) > 0)
             max = y;
